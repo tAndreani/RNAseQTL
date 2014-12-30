@@ -4,13 +4,13 @@ furry-octo-ironman
 A pipeline to map eQTL with RNAseq Data and Genotype by Sequencing
 
 SUMMARY
-
 Furry-octo-ironman is a pipeline to map cis-eQTL. The pipeline is designed getting transcriptomic from RNA-seq data 
 and variants annotation in VCF file format. 
 
 REQUIREMENTS
 
 Furry-octo-ironman requieres the following softwares:
+
 •	FastQC 
 •	Tophat2/Bowtie2
 •	HTSeq-count
