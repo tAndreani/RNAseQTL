@@ -12,10 +12,15 @@ REQUIREMENTS
 Furry-octo-ironman requieres the following softwares:
 
 •	FastQC 
+
 •	Tophat2/Bowtie2
+
 •	HTSeq-count
+
 • VCFtools
+
 • plink 1.9
+
 •	R
   o	BioMart
   o	GenomicFeatures
