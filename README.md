@@ -23,15 +23,15 @@ Furry-octo-ironman requieres the following softwares:
 
 •	R
 
-  o	BioMart
+    o	BioMart
   
-  o	GenomicFeatures
+    o	GenomicFeatures
   
-  o	PEER
+    o	PEER
   
-  o	Matrix-eQTL
+    o	Matrix-eQTL
   
-  o	ggplot2
+    o	ggplot2
 
 Furry-octo-ironman also requires other programming languages like awk, sed, and R scripts for specific purpose like filter
 the gene expression files or the VCF file. The pre-built indexes of the reference genome could be downloaded in ENSEMBL or
