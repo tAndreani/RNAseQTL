@@ -22,10 +22,15 @@ Furry-octo-ironman requieres the following softwares:
 • plink 1.9
 
 •	R
+
   o	BioMart
+  
   o	GenomicFeatures
+  
   o	PEER
+  
   o	Matrix-eQTL
+  
   o	ggplot2
 
 Furry-octo-ironman also requires other programming languages like awk, sed, and R scripts for specific purpose like filter
