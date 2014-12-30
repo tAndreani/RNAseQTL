@@ -1,7 +1,7 @@
 furry-octo-ironman
 ==================
 
-A pipeline to map eQTL with RNAseq Data and Genotype by Sequencing
+A pipeline to map eQTL with RNAseq Data and Annotated Variants.
 
 SUMMARY
 
