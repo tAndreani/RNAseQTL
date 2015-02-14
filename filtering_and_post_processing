@@ -1,0 +1,26 @@
+#Getting the gene expression matrix
+
+#Create a file in which is present the same file of different folders: 
+#example: I have 80 folder with the output of gene count. I need to create a file in wich are present all the files from each folder.
+#in practice: folder DGRP1 , DGRP2, DGRP3 etc.. have the file samout.gene.txt and I want to create a unique file of all the files and calls it GeneExpression.txt
+
+
+#######################################################
+##This is the code to create the gene expression file##
+#######################################################
+
+list.files()
+list.files(,pattern="DGRP")
+alldirs=list.files(,pattern="DGRP")
+mytable=matrix(data=NA,nrow=15687,ncol=length(alldirs))
+for (i in 1:length(alldirs)){
+mytable[,i]=read.table(paste(alldirs[i],"/samout.gene.txt",sep=""),sep="\t")[,2]}
+mytable[1:10,]
+rownames(mytable)=read.table(paste(alldirs[i],"/samout.gene.txt",sep=""),sep="\t")[,1]
+colnames(mytable)=alldirs
+head(mytable)
+tail(mytable)
+mytable.onlygenes=mytable[grep("FB",rownames(mytable)),]
+tail(mytable.onlygenes)
+write.table(mytable.onlygenes,"GeneExpression.txt",sep="\t",quote=FALSE,row.names=TRUE,col.names=TRUE)
+q()
