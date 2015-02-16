@@ -1,4 +1,4 @@
-furry-octo-ironman
+RNAseQTL
 ==================
 
 A pipeline to map eQTL with RNAseq Data and Annotated Variants.
