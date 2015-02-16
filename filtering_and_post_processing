@@ -37,4 +37,4 @@ d.filt = d[,7:ncol(d)]/d[,7:ncol(d)]
 d.filt[is.na(d.filt)] <- 0
 useRows2 <- rowSums(d.filt) >= round(0.9 * (ncol(d) - 6))   # keep only genes with >=1 read in >90% of the lines
 dfilt <-  d[useRows1 & useRows2,]
-write.table(dfilt, "my_file.filter-nonZero90.bed", sep = "\t", quote = FALSE, col.names = TRUE, row.names = FALSEE
+write.table(dfilt, "my_file.filter-nonZero90.bed", sep = "\t", quote = FALSE, col.names = TRUE, row.names = FALSE)
