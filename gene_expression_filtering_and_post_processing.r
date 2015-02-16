@@ -59,9 +59,10 @@ transpose.exonic.gene.size <- t(transpose.exonic.gene.size)
 write.table(transpose.exonic.gene.size,file="Exon.Length.Unique.txt",quote=F)
 
 #Create a csv file with the reads count for each line and add the exon length in the second column
+#from the Exon.Length.Unique.txt file
 ##Import the csv file and compute the RPKM value
 
-data = read.csv("Input.RPKM.csv", sep = ";")
+data = read.csv("Input.RPKM.computation.csv", sep = ";")
 data = data[,-ncol(data)]
 len = data[,2]
 counts = data[,-c(1:2)]
