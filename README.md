@@ -28,11 +28,8 @@ Furry-octo-ironman requieres the following softwares:
   
     o	GenomicFeatures
   
-    o	PEER
-  
     o	Matrix-eQTL
   
-    o	ggplot2
 
 Furry-octo-ironman also requires other programming languages like awk, sed, and R scripts for specific purpose like filter
 the gene expression files or the VCF file. The pre-built indexes of the reference genome could be downloaded in ENSEMBL or
