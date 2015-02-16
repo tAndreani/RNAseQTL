@@ -61,7 +61,7 @@ write.table(transpose.exonic.gene.size,file="Exon.Length.Unique.txt",quote=F)
 #Create a csv file with the reads count for each line and add the exon length in the second column
 ##Import the csv file and compute the RPKM value
 
-data = read.csv("Input.RPKM.PCA.csv", sep = ";")
+data = read.csv("Input.RPKM.csv", sep = ";")
 data = data[,-ncol(data)]
 len = data[,2]
 counts = data[,-c(1:2)]
@@ -73,3 +73,4 @@ for(i in 1:ncol(counts)) {rpm[,i] = 1e6*counts[,i]/totalCounts[i]}
 head(rpm)
 rpkm = apply(rpm, 2, function(x) 1000*x/len)
 head(rpkm)
+write.table(rpkm,file="Gene.Expression.RPKM.txt",quote=F)
