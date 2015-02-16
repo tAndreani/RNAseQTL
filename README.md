@@ -5,7 +5,7 @@ A pipeline to map eQTL with RNAseq Data and Annotated Variants.
 
 SUMMARY
 
-Furry-octo-ironman is a pipeline to map cis-eQTL. The pipeline is designed getting transcriptomic from RNA-seq data 
+RNAseQTL is a pipeline to map cis-eQTL. The pipeline is designed getting transcriptomic from RNA-seq data 
 and variants annotation in VCF file format. 
 
 REQUIREMENTS
