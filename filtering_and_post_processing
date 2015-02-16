@@ -24,3 +24,17 @@ mytable.onlygenes=mytable[grep("FB",rownames(mytable)),]
 tail(mytable.onlygenes)
 write.table(mytable.onlygenes,"GeneExpression.txt",sep="\t",quote=FALSE,row.names=TRUE,col.names=TRUE)
 q()
+
+##################################
+##Filtering Y,Hetrozygous, mtDNA##
+##################################
+
+#Input file is a gene expression matrix in .bed format
+
+d <- read.csv("my_file.bed.csv", header = TRUE,sep=";") ##for raw counts
+useRows1 <- as.character(d[,1]) %in% c("2L", "2R", "3L", "3R", "4","X") # keep only assembled chromosomes
+d.filt = d[,7:ncol(d)]/d[,7:ncol(d)]
+d.filt[is.na(d.filt)] <- 0
+useRows2 <- rowSums(d.filt) >= round(0.9 * (ncol(d) - 6))   # keep only genes with >=1 read in >90% of the lines
+dfilt <-  d[useRows1 & useRows2,]
+write.table(dfilt, "my_file.filter-nonZero90.bed", sep = "\t", quote = FALSE, col.names = TRUE, row.names = FALSEE
