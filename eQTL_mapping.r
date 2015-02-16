@@ -16,8 +16,8 @@ SNP_file_name = "filtered_freeze2_definitive.genotype";
 snps_location_file_name = ("filtered_freeze2_definitive.position");
 
 # Gene expression file name
-expression_file_name = ("dmel.quantification-gut.conditions-naive.type-rawCounts.filter-nonZero90.Normalize-PEER_QuantNorm-yes.name-yes.bed")
-gene_location_file_name = ("gene_location.txt");
+expression_file_name = ("gene_expression.txt")
+gene_location_file_name = ("gene_location.bed");
 
 # Covariates file name
 # Set to character() for no covariates
@@ -36,7 +36,7 @@ pvOutputThreshold_tra = 1e-5;
 errorCovariance = numeric();
 # errorCovariance = read.table("Sample_Data/errorCovariance.txt");
 
-# Distance for local gene-SNP pairs
+# Distance for local gene-SNP pairs 5Kb window
 cisDist = 0.5e4;
 
 ## Load genotype data
