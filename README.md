@@ -10,7 +10,7 @@ and variants annotation in VCF file format.
 
 REQUIREMENTS
 
-Furry-octo-ironman requieres the following softwares:
+RNAseQTL requieres the following softwares:
 
 •	FastQC 
 
