@@ -1,3 +1,11 @@
+#First transform the gene expression matrix under a Normal Distribution according with GTEx project
+
+quantNorm = t(apply(gene.expression.txt, 1, function(x) qqnorm(x, plot.it=FALSE)$x))
+write.table( quantNorm, file"gene_expression_Normal_Distribution.txt", sep = "\t", quote = FALSE, col.names = TRUE, row.names = TRUE)
+
+
+#Then Run Matrix-eQTL
+
 # Matrix eQTL by Andrey A. Shabalin
 # http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/
 # 
@@ -16,7 +24,7 @@ SNP_file_name = "filtered_freeze2_definitive.genotype";
 snps_location_file_name = ("filtered_freeze2_definitive.position");
 
 # Gene expression file name
-expression_file_name = ("gene_expression.txt")
+expression_file_name = ("gene_expression_Normal_Distribution.txt")
 gene_location_file_name = ("gene_location.bed");
 
 # Covariates file name
