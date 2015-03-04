@@ -21,8 +21,12 @@ echo tophat -p 4 -G mydirectory/data/genome/Drosophila_melanogaster/Ensembl/BDGP
 tophat -p 4 -G mydirectory/data/genome/Drosophila_melanogaster/Ensembl/BDGP5/Annotation/Genes/genes.gtf -o mydirectory/alignments/$fastq_file mydirectory/data/genome/Drosophila_melanogaster/Ensembl/BDGP5/Sequence/Bowtie2Index/genome mydirectory/data/fastq/$fastq_file.fastq.gz
 
 
-#From BAM to SAM
-export samtools_FILE=`sed -n "$LSB_JOBINDEX"p myjob.lsf.input`
+#Index Sort and convert from BAM to SAM
+export samtools_input=`sed -n "$LSB_JOBINDEX"p myjob.lsf.input`
+echo samtools index /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/unmapped.bam
+samtools index /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/unmapped.bam
+echo samtools sort /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/mapped.bam /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/mapped.srt
+samtools sort /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/mapped.bam /scratch/cluster/monthly/tandrean/data/alignments/$samtools_input/mapped.srt
 echo samtools view mydirectory/data/alignments/$samtools_input/merged.srt.q10.bam > mydirectory/data/alignments/$samtools_input/merged.srt.q10.sam
 samtools view mydirectory/data/alignments/$samtools_input/merged.srt.q10.bam > mydirectory/data/alignments/$samtools_input/merged.srt.q10.sam
 
