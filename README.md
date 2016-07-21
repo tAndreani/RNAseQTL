@@ -1,7 +1,7 @@
 RNAseQTL
 ==================
 
-A collection of scripts to map eQTL with RNAseq Data and Annotated Variants.
+Collection of scripts to map eQTL with RNAseq Data and Annotated Variants.
 
 SUMMARY
 
