@@ -1,7 +1,10 @@
 RNAseQTL
 ==================
 
-Collection of scripts to map eQTL with RNAseq Data and Annotated Variants.
+Collection of scripts to map eQTL with RNAseq Data and Annotated Variants. To map eQTL we need two files:  
+
+1) Gene expression counts matrix;  
+2) Genotype of the animal model (0 homozygot reference, 1 hereozygote alternative, 2 homozygote alternative);    
 
 ## Summary 
 
