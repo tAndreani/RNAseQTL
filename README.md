@@ -3,12 +3,12 @@ RNAseQTL
 
 Collection of scripts to map eQTL with RNAseq Data and Annotated Variants.
 
-## SUMMARY  
+## Summary 
 
 RNAseQTL is a collection of scripts to map cis-eQTL. The pipeline is designed getting transcriptomic from RNA-seq data 
 and variants annotation in VCF file format. 
 
-## REQUIREMENTS  
+## Requirements  
 
 RNAseQTL requieres the following softwares:  
 
