@@ -3,32 +3,32 @@ RNAseQTL
 
 Collection of scripts to map eQTL with RNAseq Data and Annotated Variants.
 
-SUMMARY
+## SUMMARY  
 
 RNAseQTL is a collection of scripts to map cis-eQTL. The pipeline is designed getting transcriptomic from RNA-seq data 
 and variants annotation in VCF file format. 
 
-REQUIREMENTS
+## REQUIREMENTS  
 
-RNAseQTL requieres the following softwares:
+RNAseQTL requieres the following softwares:  
 
-•	FastQC 
+•	FastQC  
 
-•	Tophat2/Bowtie2
+•	Tophat2/Bowtie2  
 
-•	HTSeq-count
+•	HTSeq-count  
 
-• VCFtools
+• VCFtools  
 
-• plink 1.9
+• plink 1.9  
 
-•	R
+•	R  
 
-    o	BioMart
+    o	BioMart  
   
-    o	GenomicFeatures
+    o	GenomicFeatures  
   
-    o	Matrix-eQTL
+    o	Matrix-eQTL  
   
 
 The pre-built indexes of the reference genome could be downloaded in ENSEMBL or in the iGenomes website (http://support.illumina.com/sequencing/sequencing_software/igenome.html).
