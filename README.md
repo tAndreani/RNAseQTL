@@ -25,13 +25,13 @@ RNAseQTL requieres the following softwares:
 
 • plink 1.9  
 
-•	R  
+• R    
 
-    o	BioMart  
+• BioMart   
   
-    o	GenomicFeatures  
+• GenomicFeatures  
   
-    o	Matrix-eQTL  
+• Matrix-eQTL  
   
 
 The pre-built indexes of the reference genome could be downloaded in ENSEMBL or in the iGenomes website (http://support.illumina.com/sequencing/sequencing_software/igenome.html).
